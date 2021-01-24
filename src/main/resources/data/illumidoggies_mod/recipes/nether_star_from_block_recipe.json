@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "illumidoggies_mod:nether_block"
+        }
+    ],
+    "result": {
+        "item": "minecraft:nether_star",
+        "count": 9
+    }
+}

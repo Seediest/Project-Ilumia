@@ -17,6 +17,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.illumidoggies.illumia.core.init.BlockInit;
 import com.illumidoggies.illumia.core.init.ItemInit;
 
 import java.util.stream.Collectors;
@@ -25,6 +26,7 @@ import java.util.stream.Collectors;
 @Mod(Illlumia.MOD_ID)
 public class Illlumia
 {
+	
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "illumidoggies_mod";
@@ -34,6 +36,7 @@ public class Illlumia
     	IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
     	bus.addListener(this::setup);
     	ItemInit.ITEMS.register(bus);
+    	BlockInit.BLOCKS.register(bus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         

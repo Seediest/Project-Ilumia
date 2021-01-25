@@ -20,6 +20,7 @@ public class BlockInit {
 			.hardnessAndResistance(15f, 30f)
 			.harvestTool(ToolType.PICKAXE)
 			.harvestLevel(4)
+			.setRequiresTool()
 			.sound(SoundType.ANCIENT_DEBRIS)
 			.setLightLevel((state) -> { 
 		    return 15;

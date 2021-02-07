@@ -21,7 +21,7 @@ import com.illumidoggies.illumia.core.init.BlockInit;
 import com.illumidoggies.illumia.core.init.ItemInit;
 
 import java.util.stream.Collectors;
-
+//test this is a test
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Illlumia.MOD_ID)
 public class Illlumia

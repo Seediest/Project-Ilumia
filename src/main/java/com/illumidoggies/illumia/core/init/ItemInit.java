@@ -1,6 +1,8 @@
 package com.illumidoggies.illumia.core.init;
 
 import com.illumidoggies.illumia.Illlumia;
+import com.illumidoggies.illumia.common.items.SpecialItem;
+import com.illumidoggies.illumia.common.items.SpecialItem2;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -11,10 +13,17 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemInit {
-	
+	// items
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Illlumia.MOD_ID);
-	public static final RegistryObject<Item> test = ITEMS.register("test", () -> new 
-			Item(new Item.Properties().group(ItemGroup.MISC)));
+	public static final RegistryObject<Item> test = ITEMS.register("test", 
+			() -> new Item(new Item.Properties().group(ItemGroup.MISC)));
+	
+	public static final RegistryObject<SpecialItem> special_item = ITEMS.register("special_item", 
+			() -> new SpecialItem(new Item.Properties().group(ItemGroup.MISC)));
+	
+	public static final RegistryObject<SpecialItem2> special_item2 = ITEMS.register("special_item2", 
+			() -> new SpecialItem2(new Item.Properties().group(ItemGroup.MISC)));
+	
 	// Block item
 	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
 }

@@ -1,4 +1,7 @@
 {
 	"item.illumidoggies_mod.test": "Nether Star Block",
-	"block.illumidoggies_mod.nether_block": "Nether Star Block"
+	"item.illumidoggies_mod.special_item": "Special Item",
+	"item.illumidoggies_mod.special_item2": "Special Item",
+	"block.illumidoggies_mod.nether_block": "Nether Star Block",
+	"tooltip.Special_Item.hold_shift": "Hold Shift For More Information"
 }

@@ -28,6 +28,8 @@ public class SpecialItem2 extends Item {
 	public SpecialItem2(Properties properties) {
 		super(properties);
 	}
+	
+	
 	@Override
 	@OnlyIn(Dist.CLIENT)
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {

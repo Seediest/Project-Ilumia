@@ -3,6 +3,7 @@ package com.illumidoggies.illumia.core.init;
 import com.illumidoggies.illumia.Illlumia;
 import com.illumidoggies.illumia.common.items.SpecialItem;
 import com.illumidoggies.illumia.common.items.SpecialItem2;
+import com.illumidoggies.illumia.common.specialItems.EnderStaff;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -23,6 +24,12 @@ public class ItemInit {
 	
 	public static final RegistryObject<SpecialItem2> special_item2 = ITEMS.register("special_item2", 
 			() -> new SpecialItem2(new Item.Properties().group(ItemGroup.MISC)));
+	
+	
+	// teleporting staffs
+	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
+			() -> new EnderStaff(new Item.Properties().group(ItemGroup.MISC)));
+
 	
 	// Block item
 	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));

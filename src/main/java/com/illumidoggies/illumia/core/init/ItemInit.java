@@ -17,13 +17,13 @@ public class ItemInit {
 	// items
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Illlumia.MOD_ID);
 	public static final RegistryObject<Item> test = ITEMS.register("test", 
-			() -> new Item(new Item.Properties().group(ItemGroup.MISC)));
+			() -> new Item(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
 	public static final RegistryObject<SpecialItem> special_item = ITEMS.register("special_item", 
-			() -> new SpecialItem(new Item.Properties().group(ItemGroup.MISC)));
+			() -> new SpecialItem(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
 	public static final RegistryObject<SpecialItem2> special_item2 = ITEMS.register("special_item2", 
-			() -> new SpecialItem2(new Item.Properties().group(ItemGroup.MISC)));
+			() -> new SpecialItem2(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
 	
 	// teleporting staffs
@@ -32,5 +32,5 @@ public class ItemInit {
 
 	
 	// Block item
-	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(ItemGroup.BUILDING_BLOCKS)));
+	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 }

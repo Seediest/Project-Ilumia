@@ -14,7 +14,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum TestArmorMaterial implements IArmorMaterial {
-    TEST(Illlumia.MOD_ID + ":test", 20, new int[]{4, 7, 9, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+    TEST(Illumia.MOD_ID + ":test", 20, new int[]{4, 7, 9, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
             3.0F, () -> { return Ingredient.fromItems(ItemInit.SMILE.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};

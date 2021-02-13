@@ -14,8 +14,8 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import java.util.function.Supplier;
 
 public enum TestArmorMaterial implements IArmorMaterial {
-    TEST(Illumia.MOD_ID + ":test", 20, new int[]{4, 7, 9, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
-            3.0F, () -> { return Ingredient.fromItems(ItemInit.SMILE.get()); });
+    TEST(Illlumia.MOD_ID + ":test", 20, new int[]{4, 7, 9, 4}, 50, SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND,
+            3.0F, () -> { return Ingredient.fromItems(ItemInit.special_item.get()); });
 
     private static final int[] MAX_DAMAGE_ARRAY = new int[]{13, 15, 16, 11};
     private final String name;
@@ -26,17 +26,20 @@ public enum TestArmorMaterial implements IArmorMaterial {
     private final float toughness;
     private final LazyValue<Ingredient> repairMaterial;
 
-    private void ModArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountsIn, int enchantabilityIn, SoundEvent equipSoundIn, float toughnessIn, Supplier<Ingredient> repairMaterialSupplier) {
-        this.name = nameIn;
+   
+
+ TestArmorMaterial(String nameIn, int maxDamageFactorIn, int[] damageReductionAmountsIn, int enchantabilityIn, SoundEvent equipSoundIn, 
+			float toughnessIn, Supplier<Ingredient> repairMaterialSupplier) {
+    	this.name = nameIn;
         this.maxDamageFactor = maxDamageFactorIn;
         this.damageReductionAmountArray = damageReductionAmountsIn;
         this.enchantability = enchantabilityIn;
         this.soundEvent = equipSoundIn;
         this.toughness = toughnessIn;
         this.repairMaterial = new LazyValue<>(repairMaterialSupplier);
-    }
+	}
 
-    public int getDurability1(EquipmentSlotType slotIn) {
+	public int getDurability1(EquipmentSlotType slotIn) {
         return MAX_DAMAGE_ARRAY[slotIn.getIndex()] * this.maxDamageFactor;
     }
 

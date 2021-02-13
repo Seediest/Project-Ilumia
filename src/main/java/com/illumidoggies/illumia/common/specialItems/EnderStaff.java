@@ -70,7 +70,7 @@ public class EnderStaff extends Item{
 
     // the same as Item.rayTrace(World, PlayerEntity, FluidMode) but with a longer range
     protected static BlockRayTraceResult rayTrace(World worldIn, PlayerEntity player, RayTraceContext.FluidMode fluidMode) {
-        double range = 10; // player.getAttribute(PlayerEntity.REACH_DISTANCE).getValue();;
+        double range = 15; // player.getAttribute(PlayerEntity.REACH_DISTANCE).getValue();;
 
         float f = player.rotationPitch;
         float f1 = player.rotationYaw;

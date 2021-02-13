@@ -3,6 +3,7 @@ package com.illumidoggies.illumia.core.init;
 import com.illumidoggies.illumia.Illlumia;
 import com.illumidoggies.illumia.common.items.SpecialItem;
 import com.illumidoggies.illumia.common.items.SpecialItem2;
+import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
 
 import net.minecraft.block.Block;
@@ -30,6 +31,10 @@ public class ItemInit {
 	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
 			() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 
+//bow
+	
+	public static final RegistryObject<Item> TORCH_BOW = ITEMS.register("torch_bow", 
+			() -> new TorchBow(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxDamage(500)));
 	
 	// Block item
 	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));

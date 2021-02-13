@@ -2,6 +2,9 @@ package com.illumidoggies.illumia;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,6 +20,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+//import com.illumidoggies.illumia.TutorialMod.TutorialGroup;
 import com.illumidoggies.illumia.core.init.BlockInit;
 import com.illumidoggies.illumia.core.init.ItemInit;
 
@@ -30,6 +34,9 @@ public class Illlumia
     // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "illumidoggies_mod";
+    
+    public static final ItemGroup TUTORIAL_GROUP = new TutorialGroup("tutorialtab");
+
    
     public Illlumia() {
         // Register the setup method for modloading
@@ -45,5 +52,19 @@ public class Illlumia
     private void setup(final FMLCommonSetupEvent event)
     {
     	
+    }
+    
+    
+    public static class TutorialGroup extends ItemGroup {
+
+		public TutorialGroup(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack createIcon() {
+			return ItemInit.nether_block.get().getDefaultInstance();
+		}
+		
     }
 }

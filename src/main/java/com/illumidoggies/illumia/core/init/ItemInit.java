@@ -28,7 +28,7 @@ public class ItemInit {
 	
 	// teleporting staffs
 	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
-			() -> new EnderStaff(new Item.Properties().group(ItemGroup.MISC)));
+			() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 
 	
 	// Block item

@@ -48,14 +48,14 @@ public class EnderStaff extends Item{
 	*/
     
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        // only allow the player to use it every 3 seconds
+        // cooldown = 3 seconds
         playerIn.getCooldownTracker().getCooldown(this, 60);
 
-        // get where the player is looking and move them there
+        // track where player is looking and move there
         Vector3d lookPos = rayTrace(worldIn, playerIn, RayTraceContext.FluidMode.NONE).getHitVec();
         playerIn.setPosition(lookPos.x, lookPos.y, lookPos.z);
 
-        // allow the teleport to cancel fall damage
+        //  cancel fall damage
         playerIn.fallDistance = 0F;
 
         // reduce durability

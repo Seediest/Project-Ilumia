@@ -3,5 +3,7 @@
 	"item.illumidoggies_mod.special_item": "Special Item",
 	"item.illumidoggies_mod.special_item2": "Special Item",
 	"block.illumidoggies_mod.nether_block": "Nether Star Block",
-	"tooltip.Special_Item.hold_shift": "Hold Shift For More Information"
+	"item.illumidoggies_mod.ender_staff": "Ender Staff",
+	"tooltip.Special_Item.hold_shift": "Hold Shift For More Information",
+	"itemGroup.tutorialtab": "Tutorial Items"
 }

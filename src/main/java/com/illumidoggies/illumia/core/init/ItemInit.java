@@ -31,7 +31,7 @@ public class ItemInit {
 	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
 			() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 
-//bow
+	//bow
 	
 	public static final RegistryObject<Item> TORCH_BOW = ITEMS.register("torch_bow", 
 			() -> new TorchBow(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxDamage(500)));

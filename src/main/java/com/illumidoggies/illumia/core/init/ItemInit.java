@@ -32,7 +32,7 @@ public class ItemInit {
 	
 	// teleporting staffs
 	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
-			() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+			() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
 
 	//bow
 	

@@ -18,8 +18,10 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ItemInit {
-	// items
+	
 	public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, Illlumia.MOD_ID);
+	
+	// items
 	public static final RegistryObject<Item> test = ITEMS.register("test", 
 			() -> new Item(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	

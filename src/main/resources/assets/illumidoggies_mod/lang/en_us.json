@@ -1,12 +1,26 @@
 {
+
+	//test items
 	"item.illumidoggies_mod.test": "Test Sword But Not A Sword",
 	"item.illumidoggies_mod.special_item": "Special Item",
 	"item.illumidoggies_mod.special_item2": "Special Item",
+	
+	//blocks
 	"block.illumidoggies_mod.nether_block": "Nether Star Block",
-	"item.illumidoggies_mod.ender_staff": "Ender Staff",
+	
+	//tooltips
 	"tooltip.Special_Item.hold_shift": "Hold Shift For More Information",
+	
+	//item groups
 	"itemGroup.tutorialtab": "Tutorial Items",
+	
+	//special tools 
+	"item.illumidoggies_mod.ender_staff": "Ender Staff",
+	
+	//ranged weapons
 	"item.illumidoggies_mod.torch_bow": "Torch Bow",
+	
+	//armour
 	"item.illumidoggies_mod.test_leggings": "Test Leggings",
 	"item.illumidoggies_mod.test_helmet": "Test Helmet",
 	"item.illumidoggies_mod.test_chestplate": "Test Chestplate",

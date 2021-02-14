@@ -1,12 +1,15 @@
 package com.illumidoggies.illumia.core.init;
 
 import com.illumidoggies.illumia.Illlumia;
+import com.illumidoggies.illumia.client.util.TestArmorMaterial;
 import com.illumidoggies.illumia.common.items.SpecialItem;
 import com.illumidoggies.illumia.common.items.SpecialItem2;
 import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
 
 import net.minecraft.block.Block;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -38,4 +41,25 @@ public class ItemInit {
 	
 	// Block item
 	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+
+	
+	//armour
+	public static final RegistryObject<Item> TEST_HELMET = ITEMS.register("test_helmet",
+            () -> new ArmorItem(TestArmorMaterial.TEST, EquipmentSlotType.HEAD, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> TEST_CHESTPLATE = ITEMS.register("test_chestplate",
+            () -> new ArmorItem(TestArmorMaterial.TEST, EquipmentSlotType.CHEST, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> TEST_LEGGINGS = ITEMS.register("test_leggings",
+            () -> new ArmorItem(TestArmorMaterial.TEST, EquipmentSlotType.LEGS, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+
+    public static final RegistryObject<Item> TEST_BOOTS = ITEMS.register("test_boots",
+            () -> new ArmorItem(TestArmorMaterial.TEST, EquipmentSlotType.FEET, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+
+
+
+
+
+
+
 }

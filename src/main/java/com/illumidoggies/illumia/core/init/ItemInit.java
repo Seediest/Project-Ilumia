@@ -81,7 +81,7 @@ public class ItemInit {
     		() -> new ShovelItem(ModMaterial.TOOL_TEST, 1.5f, -3f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
     
     public static final RegistryObject<HoeItem> TEST_HOE = ITEMS.register("test_hoe", 
-    		() -> new HoeItem(ModMaterial.TOOL_TEST, 3, -1.0f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+    		() -> new HoeItem(ModMaterial.TOOL_TEST, 0, -1.0f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 
 
 

@@ -7,12 +7,10 @@ import com.illumidoggies.illumia.common.items.SpecialItem2;
 import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
 
-import net.minecraft.block.Block;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -24,6 +22,8 @@ public class ItemInit {
 	// items
 	public static final RegistryObject<Item> test = ITEMS.register("test", 
 			() -> new Item(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+	
+	
 	
 	public static final RegistryObject<SpecialItem> special_item = ITEMS.register("special_item", 
 			() -> new SpecialItem(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));

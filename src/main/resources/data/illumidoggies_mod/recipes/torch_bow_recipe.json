@@ -1,0 +1,26 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "#B#",
+        "/ /",
+        "SSS"
+    ],
+    "key": {
+        "#": {
+            "item": "minecraft:flint_and_steel"
+        },
+        "B": {
+            "item": "minecraft:bow"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        },
+        "S": {
+            "item": "minecraft:string"
+        }
+    },
+    "result": {
+        "item": "illumidoggies_mod:torch_bow",
+        "count": 1
+    }
+}

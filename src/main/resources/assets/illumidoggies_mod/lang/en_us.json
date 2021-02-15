@@ -20,9 +20,21 @@
 	//ranged weapons
 	"item.illumidoggies_mod.torch_bow": "Torch Bow",
 	
+	//swords
+	"item.illumidoggies_mod.test_sword": "Test Sword",
+	
+	//tools
+	"item.illumidoggies_mod.test_pickaxe": "Test Pickaxe",
+	"item.illumidoggies_mod.test_axe": "Test Axe",
+	"item.illumidoggies_mod.test_shovel": "Test Shovel",
+	"item.illumidoggies_mod.test_hoe": "Test Hoe",
+	
 	//armour
 	"item.illumidoggies_mod.test_leggings": "Test Leggings",
 	"item.illumidoggies_mod.test_helmet": "Test Helmet",
 	"item.illumidoggies_mod.test_chestplate": "Test Chestplate",
 	"item.illumidoggies_mod.test_boots": "Test Boots"
+	
+	
+	
 }

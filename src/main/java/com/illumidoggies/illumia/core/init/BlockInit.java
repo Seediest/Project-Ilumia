@@ -16,6 +16,7 @@ import net.minecraft.block.material.MaterialColor;
 public class BlockInit {
 	public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, 
 			Illlumia.MOD_ID);
+	
 	public static final RegistryObject<Block> nether_block = BLOCKS.register("nether_block", () -> new Block(AbstractBlock.Properties.create(Material.IRON, MaterialColor.BLUE)
 			.hardnessAndResistance(15f, 30f)
 			.harvestTool(ToolType.PICKAXE)

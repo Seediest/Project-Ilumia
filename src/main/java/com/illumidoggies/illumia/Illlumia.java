@@ -44,6 +44,9 @@ public class Illlumia
     	bus.addListener(this::setup);
     	ItemInit.ITEMS.register(bus);
     	BlockInit.BLOCKS.register(bus);
+
+    	
+    	
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         

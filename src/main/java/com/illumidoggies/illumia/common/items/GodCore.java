@@ -23,9 +23,9 @@ import net.minecraft.world.World;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
 
-public class SpecialItem2 extends Item {
+public class GodCore extends Item {
 
-	public SpecialItem2(Properties properties) {
+	public GodCore(Properties properties) {
 		super(properties);
 	}
 	
@@ -35,22 +35,16 @@ public class SpecialItem2 extends Item {
 	public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
 		super.addInformation(stack, worldIn, tooltip, flagIn);
 		if (InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
-			tooltip.add(new StringTextComponent("Advanced tooltip"));
+			tooltip.add(new TranslationTextComponent("tooltip.godcore.lore"));
 		}
 			else {
 				
 				tooltip.add(new TranslationTextComponent("tooltip.Special_Item.hold_shift"));
-			}
+			}	
 	}
-	
+	//make shiny 
 	@Override
-	public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-		playerIn.addPotionEffect(new EffectInstance(Effects.HASTE, 200, 10));
-		LightningBoltEntity Entity =  new LightningBoltEntity(null, worldIn);
-		worldIn.addEntity(new LightningBoltEntity(null, worldIn));
-		Entity.setPositionAndRotation(playerIn.getPosX(), playerIn.getPosY(), playerIn.getPosZ(), 0.0F, 0.0F);
-		
-		worldIn.addEntity(Entity);
-		return ActionResult.resultSuccess(playerIn.getHeldItem(handIn));
+	 public boolean hasEffect(ItemStack par1ItemStack){
+	 return true;
 	}
 }

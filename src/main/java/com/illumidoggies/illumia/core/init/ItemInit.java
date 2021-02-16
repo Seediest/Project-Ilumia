@@ -1,9 +1,10 @@
 package com.illumidoggies.illumia.core.init;
 
 import com.illumidoggies.illumia.Illlumia;
+
 import com.illumidoggies.illumia.client.util.TestArmorMaterial;
+import com.illumidoggies.illumia.common.items.GodCore;
 import com.illumidoggies.illumia.common.items.SpecialItem;
-import com.illumidoggies.illumia.common.items.SpecialItem2;
 import com.illumidoggies.illumia.common.items.ModMaterial.ModMaterial;
 import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
@@ -35,8 +36,8 @@ public class ItemInit {
 	public static final RegistryObject<SpecialItem> special_item = ITEMS.register("special_item", 
 			() -> new SpecialItem(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
-	public static final RegistryObject<SpecialItem2> special_item2 = ITEMS.register("special_item2", 
-			() -> new SpecialItem2(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+	public static final RegistryObject<GodCore> god_core = ITEMS.register("god_core", 
+			() -> new GodCore(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
 	
 	// teleporting staffs

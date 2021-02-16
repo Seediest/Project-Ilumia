@@ -1,6 +1,10 @@
 {
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "illumidoggies_mod:items/test_leggings"
-  }
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "illumidoggies_mod:items/test_leggings" 
+	},
+	
+	"overrides": [
+		{"predicate": {"custom_model_data":1}, "model": "illumidoggies_mod:items/test_leggings_model"}
+	]
 }

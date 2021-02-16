@@ -3,14 +3,13 @@
 	//test items
 	"item.illumidoggies_mod.test": "Test Sword But Not A Sword",
 	"item.illumidoggies_mod.special_item": "Special Item",
-	"item.illumidoggies_mod.special_item2": "Special Item",
 	
 	//blocks
 	"block.illumidoggies_mod.nether_block": "Nether Star Block",
 	
-	//tooltips
-	"tooltip.Special_Item.hold_shift": "Hold Shift For More Information",
-	
+	//tooltips & lore
+	"tooltip.Special_Item.hold_shift": "\u00a7bHold Shift For More Information",
+	"tooltip.godcore.lore": "\u00a7e\"The very essence that started it all\"",
 	//item groups
 	"itemGroup.tutorialtab": "Tutorial Items",
 	
@@ -33,8 +32,9 @@
 	"item.illumidoggies_mod.test_leggings": "Test Leggings",
 	"item.illumidoggies_mod.test_helmet": "Test Helmet",
 	"item.illumidoggies_mod.test_chestplate": "Test Chestplate",
-	"item.illumidoggies_mod.test_boots": "Test Boots"
+	"item.illumidoggies_mod.test_boots": "Test Boots",
 	
-	
+	//ingredients
+	"item.illumidoggies_mod.god_core": "\u00a74\u00a7k1\u00a7eDivine God Core Singularium\u00a74\u00a7k1"
 	
 }

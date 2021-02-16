@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "###",
+        "###",
+        "###"
+    ],
+    "key": {
+        "#": {
+            "item": "illumidoggies_mod:nether_block"
+        }
+    },
+    "result": {
+        "item": "illumidoggies_mod:god_core",
+        "count": 1
+    }
+}

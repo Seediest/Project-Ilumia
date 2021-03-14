@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 513932126,
+    "biome_source": {
+      "type": "minecraft:fixed",
+      "seed": 513932126,
+      "biome": "illumidoggies_mod:plainstest"
+    },
+    "settings": "minecraft:overworld"
+  }
+}

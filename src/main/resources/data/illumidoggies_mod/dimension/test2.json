@@ -6,7 +6,7 @@
     "biome_source": {
       "type": "minecraft:fixed",
       "seed": 676254839,
-      "biome": "minecraft:plains"
+      "biome": "illumidoggies_mod:plainstest"
     },
     "settings": {
       "name": "minecraft:overworld",

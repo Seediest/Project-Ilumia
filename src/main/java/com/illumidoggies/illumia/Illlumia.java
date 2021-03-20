@@ -20,9 +20,12 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.illumidoggies.illumia.core.init.ArmorInit;
 //import com.illumidoggies.illumia.TutorialMod.TutorialGroup;
 import com.illumidoggies.illumia.core.init.BlockInit;
 import com.illumidoggies.illumia.core.init.ItemInit;
+import com.illumidoggies.illumia.core.init.ToolInit;
+import com.illumidoggies.illumia.core.init.WeaponInit;
 
 import java.util.stream.Collectors;
 //test this is a test
@@ -44,7 +47,9 @@ public class Illlumia
     	bus.addListener(this::setup);
     	ItemInit.ITEMS.register(bus);
     	BlockInit.BLOCKS.register(bus);
-
+    	WeaponInit.ITEMS.register(bus);
+    	ToolInit.ITEMS.register(bus);
+    	ArmorInit.ITEMS.register(bus);
     	
     	
         // Register ourselves for server and other game events we are interested in

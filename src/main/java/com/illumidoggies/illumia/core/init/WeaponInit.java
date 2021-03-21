@@ -1,11 +1,12 @@
 package com.illumidoggies.illumia.core.init;
 
 import com.illumidoggies.illumia.Illlumia;
-
+import com.illumidoggies.illumia.client.util.ModItemTier;
 import com.illumidoggies.illumia.common.items.SpecialItem;
 import com.illumidoggies.illumia.common.items.ModMaterial.ModMaterial;
 import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
+import com.illumidoggies.illumia.common.items.BEHOLDING_EYE;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -34,6 +35,13 @@ public class WeaponInit {
 	//bow
 	public static final RegistryObject<Item> TORCH_BOW = ITEMS.register("torch_bow", 
 				() -> new TorchBow(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxDamage(500)));
+
+
+	//jomee sword
+	 public static final RegistryObject<SwordItem> BEHOLDING_EYE = ITEMS.register("beholding_eye", 
+	    		() -> new BEHOLDING_EYE(ModItemTier.BEHOLDING, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+	 
+	 
 	
 	
 	

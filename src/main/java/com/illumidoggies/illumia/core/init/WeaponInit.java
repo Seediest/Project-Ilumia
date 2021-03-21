@@ -38,9 +38,20 @@ public class WeaponInit {
 
 
 	//jomee sword
-	 public static final RegistryObject<SwordItem> BEHOLDING_EYE = ITEMS.register("beholding_eye", 
+	public static final RegistryObject<SwordItem> BEHOLDING_EYE = ITEMS.register("beholding_eye", 
 	    		() -> new BEHOLDING_EYE(ModItemTier.BEHOLDING, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	 
+	
+	//need to be implemented I follwed instructions but did not work
+	/*
+	//kyle sword
+	public static final RegistryObject<SwordItem> Geometrical_Dominator = ITEMS.register("geometrical_dominator", 
+		    	() -> new Geometrical_Dominator(ModItemTier.Geometry, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+	
+	//kyle sword 2
+	public static final RegistryObject<SwordItem> Ethereal_Penetrator = ITEMS.register("ethereal_penetrator", 
+		    	() -> new com.illumidoggies.illumia.common.items.Ethereal_Penetrator(ModItemTier.Ethereal, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));	
+	*/
 	 
 	
 	

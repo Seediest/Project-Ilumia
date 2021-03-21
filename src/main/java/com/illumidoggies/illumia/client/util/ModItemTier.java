@@ -28,7 +28,7 @@ public enum ModItemTier implements IItemTier{
         this.enchantability = enchantability;
         this.repairMaterial = repairMaterial;
     }
-
+    
     @Override
     public int getMaxUses() {
         return maxUses;
@@ -58,4 +58,6 @@ public enum ModItemTier implements IItemTier{
     public Ingredient getRepairMaterial() {
         return repairMaterial.get();
     }
+    
+
 }

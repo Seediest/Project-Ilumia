@@ -34,6 +34,8 @@ public class ItemInit {
 	public static final RegistryObject<Item> test = ITEMS.register("test", 
 			() -> new Item(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
+	public static final RegistryObject<Item> testtwo = ITEMS.register("testtwo", 
+			() -> new Item(new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
 	
 	public static final RegistryObject<SpecialItem> special_item = ITEMS.register("special_item", 

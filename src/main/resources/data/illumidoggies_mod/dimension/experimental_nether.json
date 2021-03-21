@@ -1,0 +1,52 @@
+{
+  "type": "minecraft:the_nether",
+  "generator": {
+    "type": "minecraft:noise",
+    "seed": 513932126,
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "seed": 513932126,
+      "altitude_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          8,
+          1
+        ]
+      },
+      "temperature_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          5,
+          1
+        ]
+      },
+      "humidity_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          3
+        ]
+      },
+      "weirdness_noise": {
+        "firstOctave": -7,
+        "amplitudes": [
+          1,
+          4
+        ]
+      },
+      "biomes": [
+        {
+          "biome": "illumidoggies_mod:basalt_deltas",
+          "parameters": {
+            "altitude": 1,
+            "temperature": 1,
+            "humidity": 0,
+            "weirdness": 1,
+            "offset": 1
+          }
+        }
+      ]
+    },
+    "settings": "minecraft:nether"
+  }
+}

@@ -9,7 +9,7 @@
       "biome": "illumidoggies_mod:plainstest"
     },
     "settings": {
-      "name": "minecraft:overworld",
+      "name": "minecraft:the_end",
       "bedrock_roof_position": -10,
       "bedrock_floor_position": 0,
       "sea_level": 63,

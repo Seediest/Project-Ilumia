@@ -1,0 +1,17 @@
+{
+  "config": {
+    "top_material": {
+      "Name": "minecraft:packed_ice"
+    },
+    "under_material": {
+      "Properties": {
+        "axis": "y"
+      },
+      "Name": "minecraft:warped_wart_block"
+    },
+    "underwater_material": {
+      "Name": "minecraft:magma_block"
+    }
+  },
+  "type": "illumidoggies_mod:basalt_deltas"
+}

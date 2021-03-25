@@ -48,6 +48,7 @@ public class ItemInit {
 	
 	// Block item
 	public static final RegistryObject<BlockItem> nether_block = ITEMS.register("nether_block", () -> new BlockItem(BlockInit.nether_block.get(), new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+	public static final RegistryObject<BlockItem> TestGUI = ITEMS.register("testgui", () -> new BlockItem(BlockInit.TestGUIEntity.get(), new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 
 	
 	

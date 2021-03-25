@@ -6,6 +6,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
 import com.illumidoggies.illumia.Illlumia;
+import com.illumidoggies.illumia.common.blocks.TestGUI;
 
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
@@ -26,5 +27,8 @@ public class BlockInit {
 			.setLightLevel((state) -> { 
 		    return 15;
 		})));
+	
+	public static final RegistryObject<Block> TestGUIEntity = BLOCKS.register("testgui", () -> new TestGUI());
+	
 	}
    

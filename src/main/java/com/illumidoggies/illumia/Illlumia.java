@@ -23,7 +23,9 @@ import org.apache.logging.log4j.Logger;
 import com.illumidoggies.illumia.core.init.ArmorInit;
 //import com.illumidoggies.illumia.TutorialMod.TutorialGroup;
 import com.illumidoggies.illumia.core.init.BlockInit;
+import com.illumidoggies.illumia.core.init.ContainerTypeInit;
 import com.illumidoggies.illumia.core.init.ItemInit;
+import com.illumidoggies.illumia.core.init.TileEntityTypeInit;
 import com.illumidoggies.illumia.core.init.ToolInit;
 import com.illumidoggies.illumia.core.init.WeaponInit;
 
@@ -50,7 +52,8 @@ public class Illlumia
     	WeaponInit.ITEMS.register(bus);
     	ToolInit.ITEMS.register(bus);
     	ArmorInit.ITEMS.register(bus);
-    	
+    	TileEntityTypeInit.TILE_ENTITY_TYPE.register(bus);
+    	ContainerTypeInit.CONTAINER_TYPES.register(bus);
     	
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);

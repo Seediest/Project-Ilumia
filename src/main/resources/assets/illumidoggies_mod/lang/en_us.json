@@ -4,10 +4,10 @@
 	"item.illumidoggies_mod.test": "Test Sword But Not A Sword",
 	"item.illumidoggies_mod.testtwo": "Another Test Sword But Not A Sword",
 	"item.illumidoggies_mod.special_item": "Special Item",
-	
+	"item.illumidoggies_mod.testgui": "Test Container",
 	//blocks
 	"block.illumidoggies_mod.nether_block": "Nether Star Block",
-	
+	"block.illumidoggies_mod.testgui": "Test Container",
 	//tooltips & lore
 	"tooltip.Special_Item.hold_shift": "\u00a7bHold Shift For More Information",
 	"tooltip.godcore.lore": "\u00a7e\"The very essence that started it all\"",
@@ -40,6 +40,8 @@
 	"item.illumidoggies_mod.test_spec_helmet": "Test Special helmet",
 	
 	//ingredients
-	"item.illumidoggies_mod.god_core": "\u00a74\u00a7k1\u00a7eDivine God Core Singularium\u00a74\u00a7k1"
-	
+	"item.illumidoggies_mod.god_core": "\u00a74\u00a7k1\u00a7eDivine God Core Singularium\u00a74\u00a7k1",
+
+	//containers
+	"container.illumidoggies_mod.testgui": "Test Container"
 }

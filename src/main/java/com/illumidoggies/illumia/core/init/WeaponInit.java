@@ -42,7 +42,7 @@ public class WeaponInit {
 	    		() -> new BEHOLDING_EYE(ModItemTier.BEHOLDING, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	 
 	
-	//need to be implemented I follwed instructions but did not work
+	//need to be implemented I followed instructions but did not work
 	/*
 	//kyle sword
 	public static final RegistryObject<SwordItem> Geometrical_Dominator = ITEMS.register("geometrical_dominator", 

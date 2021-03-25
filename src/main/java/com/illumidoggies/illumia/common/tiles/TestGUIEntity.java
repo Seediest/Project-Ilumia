@@ -5,7 +5,6 @@ import com.illumidoggies.illumia.common.containers.TestGUIContainer;
 import com.illumidoggies.illumia.core.init.TileEntityTypeInit;
 
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.ItemStackHelper;
 import net.minecraft.inventory.container.Container;
@@ -73,47 +72,4 @@ public static int slots = 1;
 			ItemStackHelper.loadAllItems(nbt, this.items);
 		}
 	}
-
-	@Override
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public ItemStack getStackInSlot(int index) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public ItemStack decrStackSize(int index, int count) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public ItemStack removeStackFromSlot(int index) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void setInventorySlotContents(int index, ItemStack stack) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public boolean isUsableByPlayer(PlayerEntity player) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	@Override
-	public void clear() {
-		// TODO Auto-generated method stub
-		
-	}
-
 }

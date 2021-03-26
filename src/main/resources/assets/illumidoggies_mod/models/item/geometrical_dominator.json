@@ -1,13 +1,13 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "illumidoggies_mod:stuff/blast_furnace_top",
-		"3": "illumidoggies_mod:stuff/gold_block",
-		"4": "illumidoggies_mod:stuff/tube_coral_block",
-		"5": "illumidoggies_mod:stuff/warped_wart_block",
-		"7": "illumidoggies_mod:stuff/emerald_block",
-		"8": "illumidoggies_mod:stuff/prismarine_bricks",
-		"particle": "illumidoggies_mod:stuff/blast_furnace_top"
+		"0": "illumidoggies_mod:items/geometrical_dominator/blast_furnace_top",
+		"3": "illumidoggies_mod:items/geometrical_dominator/gold_block",
+		"4": "illumidoggies_mod:items/geometrical_dominator/tube_coral_block",
+		"5": "illumidoggies_mod:items/geometrical_dominator/warped_wart_block",
+		"7": "illumidoggies_mod:items/geometrical_dominator/emerald_block",
+		"8": "illumidoggies_mod:items/geometrical_dominator/prismarine_bricks",
+		"particle": "illumidoggies_mod:items/geometrical_dominator/blast_furnace_top"
 	},
 	"elements": [
 		{

@@ -1,13 +1,13 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "illumidoggies_mod:items/testswordtexture/texture1",
-		"1": "illumidoggies_mod:items/testswordtexture/texture2",
-		"2": "illumidoggies_mod:items/testswordtexture/texture3",
-		"3": "illumidoggies_mod:items/testswordtexture/texture4",
-		"4": "illumidoggies_mod:items/testswordtexture/texture5",
-		"6": "illumidoggies_mod:items/testswordtexture/texture7",
-		"particle": "illumidoggies_mod:items/testswordtexture/texture1"
+		"0": "illumidoggies_mod:items/ethereal_penetrator/texture1",
+		"1": "illumidoggies_mod:items/ethereal_penetrator/texture2",
+		"2": "illumidoggies_mod:items/ethereal_penetrator/texture3",
+		"3": "illumidoggies_mod:items/ethereal_penetrator/texture4",
+		"4": "illumidoggies_mod:items/ethereal_penetrator/texture5",
+		"6": "illumidoggies_mod:items/ethereal_penetrator/texture7",
+		"particle": "illumidoggies_mod:items/ethereal_penetrator/texture1"
 	},
 	"elements": [
 		{

@@ -1,17 +1,18 @@
 package com.illumidoggies.illumia.core.init;
 
 import com.illumidoggies.illumia.Illlumia;
-import com.illumidoggies.illumia.client.util.ModItemTier;
-import com.illumidoggies.illumia.common.items.SpecialItem;
+import com.illumidoggies.illumia.client.util.ItemTier.EtherealTier;
+import com.illumidoggies.illumia.client.util.ItemTier.GeometricalTier;
+import com.illumidoggies.illumia.client.util.ItemTier.BeholdingTier;
 import com.illumidoggies.illumia.common.items.ModMaterial.ModMaterial;
 import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
 import com.illumidoggies.illumia.common.items.BEHOLDING_EYE;
+import com.illumidoggies.illumia.common.items.Geometrical_Dominator;
+import com.illumidoggies.illumia.common.items.Ethereal_Penetrator;
 
-import net.minecraft.block.Block;
-import net.minecraft.item.BlockItem;
+
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SwordItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -39,19 +40,18 @@ public class WeaponInit {
 
 	//jomee sword
 	public static final RegistryObject<SwordItem> BEHOLDING_EYE = ITEMS.register("beholding_eye", 
-	    		() -> new BEHOLDING_EYE(ModItemTier.BEHOLDING, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+	    		() -> new BEHOLDING_EYE(BeholdingTier.BEHOLDING, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	 
 	
-	//need to be implemented I followed instructions but did not work
-	/*
+
 	//kyle sword
 	public static final RegistryObject<SwordItem> Geometrical_Dominator = ITEMS.register("geometrical_dominator", 
-		    	() -> new Geometrical_Dominator(ModItemTier.Geometry, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
+		    	() -> new Geometrical_Dominator(GeometricalTier.Geometrical, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 	
 	//kyle sword 2
 	public static final RegistryObject<SwordItem> Ethereal_Penetrator = ITEMS.register("ethereal_penetrator", 
-		    	() -> new com.illumidoggies.illumia.common.items.Ethereal_Penetrator(ModItemTier.Ethereal, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));	
-	*/
+		    	() -> new Ethereal_Penetrator(EtherealTier.Ethereal, 3, -2.4f, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));	
+
 	 
 	
 	

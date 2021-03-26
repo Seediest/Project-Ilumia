@@ -1,8 +1,6 @@
 {
 
 	//test items
-	"item.illumidoggies_mod.test": "Test Sword But Not A Sword",
-	"item.illumidoggies_mod.testtwo": "Another Test Sword But Not A Sword",
 	"item.illumidoggies_mod.special_item": "Special Item",
 	"item.illumidoggies_mod.testgui": "Test Container",
 	//blocks
@@ -22,7 +20,9 @@
 	
 	//swords
 	"item.illumidoggies_mod.test_sword": "Test Sword",
-	"item.illumidoggies_mod.beholding_eye": "Beholding Eye",
+	"item.illumidoggies_mod.beholding_eye": "\u00a7k2\u00a74\u00a7l Beholding Eye\u00a7r\u00a7k 2",
+	"item.illumidoggies_mod.geometrical_dominator": "\u00a7k2\u00a75\u00a7l Geometrical Dominator\u00a7r\u00a7k 2",
+	"item.illumidoggies_mod.ethereal_penetrator": "\u00a7k2\u00a7b\u00a7l Ethereal Penetrator\u00a7r\u00a7k 2",
 	
 	//tools
 	"item.illumidoggies_mod.test_pickaxe": "Test Pickaxe",

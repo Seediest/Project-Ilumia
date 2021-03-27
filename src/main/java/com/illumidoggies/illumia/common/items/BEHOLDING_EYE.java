@@ -1,6 +1,12 @@
 package com.illumidoggies.illumia.common.items;
 
-	import net.minecraft.client.Minecraft;
+	import java.util.List;
+
+import org.lwjgl.glfw.GLFW;
+
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.util.ITooltipFlag;
+import net.minecraft.client.util.InputMappings;
 import net.minecraft.enchantment.Enchantment;
 	import net.minecraft.enchantment.EnchantmentHelper;
 	import net.minecraft.enchantment.Enchantments;
@@ -16,7 +22,12 @@ import net.minecraft.potion.Effect;
 import net.minecraft.potion.EffectInstance;
 import net.minecraft.potion.Effects;
 import net.minecraft.util.ActionResult;
+import net.minecraft.util.text.ITextComponent;
+import net.minecraft.util.text.StringTextComponent;
+import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
+import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.api.distmarker.OnlyIn;
 
 	public class BEHOLDING_EYE extends SwordItem {
 
@@ -41,5 +52,18 @@ import net.minecraft.world.World;
 	        ActionResult.resultFail(Minecraft.getInstance().player.getHeldItem(player.getActiveHand()));
 	        return true;
 	    }
+	    
+		@Override
+		@OnlyIn(Dist.CLIENT)
+		public void addInformation(ItemStack stack, World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
+			super.addInformation(stack, worldIn, tooltip, flagIn);
+			if (InputMappings.isKeyDown(Minecraft.getInstance().getMainWindow().getHandle(), GLFW.GLFW_KEY_LEFT_SHIFT)) {
+				tooltip.add(new StringTextComponent("Advanced tooltip"));
+			}
+				else {
+					
+					tooltip.add(new TranslationTextComponent("tooltip.Special_Item.hold_shift"));
+				}
+		}
 	}
 

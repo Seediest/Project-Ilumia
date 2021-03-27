@@ -16,7 +16,7 @@ import net.minecraft.util.ResourceLocation;
 
 /* This is our ArmorRenderer class which is pretty self explanatory and simple if you know even a tiny bit of java
 *  But I'll still explain stuff here and there
-*  We need this class to reigster our custom armor in our CustomArmorInit class
+*  We need this class to register our custom armor in our CustomArmorInit class
 */
 
 // We extend ArmorItem because we still want all the good parts of a normal armor item but we want to tweak some stuff

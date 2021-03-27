@@ -7,7 +7,7 @@
 	"block.illumidoggies_mod.nether_block": "Nether Star Block",
 	"block.illumidoggies_mod.testgui": "Test Container",
 	//tooltips & lore
-	"tooltip.Special_Item.hold_shift": "\u00a7bHold Shift For More Information",
+	"tooltip.Special_Item.hold_shift": "\u00a7eHold \u00a7b\u00a7lShift\u00a7e For More Information",
 	"tooltip.godcore.lore": "\u00a7e\"The very essence that started it all\"",
 	//item groups
 	"itemGroup.tutorialtab": "Tutorial Items",

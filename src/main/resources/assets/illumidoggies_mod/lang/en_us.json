@@ -10,8 +10,8 @@
 	"tooltip.Special_Item.hold_shift": "\u00a7eHold \u00a7b\u00a7lShift\u00a7e For More Information",
 	"tooltip.godcore.lore": "\u00a7e\"The very essence that started it all\"",
 	//item groups
-	"itemGroup.tutorialtab": "Tutorial Items",
-	
+	"itemGroup.TutorialTab": "Experimental Items",
+	"itemGroup.FinishedTab": "Completed Items",
 	//special tools 
 	"item.illumidoggies_mod.ender_staff": "Ender Staff",
 	

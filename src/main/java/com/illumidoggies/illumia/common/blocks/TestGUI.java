@@ -46,7 +46,7 @@ public class TestGUI extends Block{
 				NetworkHooks.openGui((ServerPlayerEntity) player, (TestGUIEntity) te, pos);
 			}
 		}
-		return super.onBlockActivated(state, worldIn, pos, player, handIn, hit);
+		return ActionResultType.SUCCESS;
 	}
 	
 }

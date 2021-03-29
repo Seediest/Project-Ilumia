@@ -30,10 +30,8 @@ public class ArmorInit {
 	    public static final RegistryObject<Item> TEST_BOOTS = ITEMS.register("test_boots",
 	            () -> new ArmorItem(TestArmorMaterial.TEST, EquipmentSlotType.FEET, new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
 
-	    //test 3d armour
-	    /*
 	    public static final RegistryObject<Item> TEST_SPEC_HELMET = ITEMS.register("test_spec_helmet",
 	            () -> new ArmorItem(TestArmorMaterial.TEST, EquipmentSlotType.HEAD,  new Item.Properties().group(Illlumia.TUTORIAL_GROUP)));
-	    */
+
 	
 }

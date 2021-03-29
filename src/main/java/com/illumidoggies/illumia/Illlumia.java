@@ -40,8 +40,8 @@ public class Illlumia
     public static final Logger LOGGER = LogManager.getLogger();
     public static final String MOD_ID = "illumidoggies_mod";
     
-    public static final ItemGroup TUTORIAL_GROUP = new TutorialGroup("tutorialtab");
-
+    public static final ItemGroup TUTORIAL_GROUP = new TutorialGroup("TutorialTab");
+    public static final ItemGroup FINISHED_GROUP = new FinishedGroup("FinishedTab");
    
     public Illlumia() {
         // Register the setup method for modloading
@@ -74,8 +74,20 @@ public class Illlumia
 
 		@Override
 		public ItemStack createIcon() {
-			return ItemInit.nether_block.get().getDefaultInstance();
+			return ItemInit.TestGUI.get().getDefaultInstance();
 		}
 		
+		
+    }
+    public static class FinishedGroup extends ItemGroup {
+
+		public FinishedGroup(String label) {
+			super(label);
+		}
+
+		@Override
+		public ItemStack createIcon() {
+			return ItemInit.nether_block.get().getDefaultInstance();
+		}
     }
 }

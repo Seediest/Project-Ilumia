@@ -4,7 +4,6 @@ import net.minecraftforge.common.ToolType;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-
 import com.illumidoggies.illumia.Illlumia;
 import com.illumidoggies.illumia.common.blocks.TestGUI;
 

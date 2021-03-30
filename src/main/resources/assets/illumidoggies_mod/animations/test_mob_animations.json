@@ -1,7 +1,7 @@
 {
 	"format_version": "1.8.0",
 	"animations": {
-		"animation.model.new": {
+		"walking": {
 			"loop": true,
 			"animation_length": 2.08,
 			"bones": {
@@ -98,6 +98,74 @@
 					}
 				}
 			}
+		},
+		"idle": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"head": {
+					"rotation": {
+						"0.48": {
+							"vector": [0, -10, 0]
+						},
+						"0.8": {
+							"vector": [0, 0, 0]
+						}
+					}
+				},
+				"arm2": {
+					"rotation": {
+						"0.48": {
+							"vector": [-2.5, 0, 0]
+						},
+						"0.8": {
+							"vector": [7.5, -2.5, 0]
+						}
+					}
+				},
+				"arm1": {
+					"rotation": {
+						"0.48": {
+							"vector": [7.5, 0, 0]
+						},
+						"0.8": {
+							"vector": [5, 7.5, 0]
+						}
+					}
+				}
+			}
+		},
+		"attack": {
+			"animation_length": 0.96,
+			"bones": {
+				"arm2": {
+					"rotation": {
+						"0.0": {
+							"vector": [5, 0, 0]
+						},
+						"0.4": {
+							"vector": [-87.5, 0, 0]
+						},
+						"0.96": {
+							"vector": [-17.5, 0, 0]
+						}
+					}
+				},
+				"arm1": {
+					"rotation": {
+						"0.0": {
+							"vector": [7.5, 0, 0]
+						},
+						"0.4": {
+							"vector": [-80, 0, 0]
+						},
+						"0.96": {
+							"vector": [-30, 0, 0]
+						}
+					}
+				}
+			}
 		}
-	}
+	},
+	"geckolib_format_version": 2
 }

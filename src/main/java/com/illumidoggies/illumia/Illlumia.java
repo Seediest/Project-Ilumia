@@ -1,9 +1,11 @@
 package com.illumidoggies.illumia;
 
+import net.minecraft.entity.ai.attributes.GlobalEntityTypeAttributes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.fml.DeferredWorkQueue;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -12,10 +14,12 @@ import software.bernie.geckolib3.GeckoLib;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.illumidoggies.illumia.common.entities.animal.IllumiPig;
 import com.illumidoggies.illumia.core.init.ArmorInit;
 //import com.illumidoggies.illumia.TutorialMod.TutorialGroup;
 import com.illumidoggies.illumia.core.init.BlockInit;
 import com.illumidoggies.illumia.core.init.ContainerTypeInit;
+import com.illumidoggies.illumia.core.init.EntityTypeInit;
 import com.illumidoggies.illumia.core.init.ItemInit;
 import com.illumidoggies.illumia.core.init.TileEntityTypeInit;
 import com.illumidoggies.illumia.core.init.ToolInit;
@@ -45,6 +49,7 @@ public class Illlumia
     	ArmorInit.ITEMS.register(bus);
     	TileEntityTypeInit.TILE_ENTITY_TYPE.register(bus);
     	ContainerTypeInit.CONTAINER_TYPES.register(bus);
+    	EntityTypeInit.ENTITY_TYPES.register(bus);
     	
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -52,9 +57,12 @@ public class Illlumia
 
     }
 
-    private void setup(final FMLCommonSetupEvent event)
+    @SuppressWarnings("deprecation")
+	private void setup(final FMLCommonSetupEvent event)
     {
-    	
+    	DeferredWorkQueue.runLater(() -> {
+            GlobalEntityTypeAttributes.put(EntityTypeInit.ILLUMIPIG.get(), IllumiPig.setCustomAttributes().create());
+        });
     }
     
     

@@ -43,5 +43,8 @@
 	"item.illumidoggies_mod.god_core": "\u00a74\u00a7k1\u00a7eDivine God Core Singularium\u00a74\u00a7k1",
 
 	//containers
-	"container.illumidoggies_mod.testgui": "Test Container"
+	"container.illumidoggies_mod.testgui": "Test Container",
+	
+	//entites
+	"entity.illumidoggies_mod.illumipig": "Illumi Pig"
 }

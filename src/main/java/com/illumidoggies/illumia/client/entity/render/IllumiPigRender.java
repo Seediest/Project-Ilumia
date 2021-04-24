@@ -11,7 +11,7 @@ import net.minecraft.util.ResourceLocation;
 
 public class IllumiPigRender extends MobRenderer<IllumiPig, IllumiPigModel<IllumiPig>> {
 
-    protected static final ResourceLocation TEXTURE = new ResourceLocation(Illlumia.MOD_ID, "textures/entity/hog.png");
+    protected static final ResourceLocation TEXTURE = new ResourceLocation(Illlumia.MOD_ID, "textures/entities/illumipig.png");
 
     public IllumiPigRender(EntityRendererManager renderManagerIn) {
         super(renderManagerIn, new com.illumidoggies.illumia.client.entity.model.IllumiPigModel<>(), 0.7f);

@@ -14,7 +14,8 @@
 	"itemGroup.FinishedTab": "Completed Items",
 	//special tools 
 	"item.illumidoggies_mod.ender_staff": "Ender Staff",
-	
+	"item.illumidoggies_mod.tesseract_staff": "Tesseract Staff",
+	"item.illumidoggies_mod.banana_staff": "Banana Staff",
 	//ranged weapons
 	"item.illumidoggies_mod.torch_bow": "Torch Bow",
 	

@@ -6,7 +6,9 @@ import com.illumidoggies.illumia.client.util.ItemTier.GeometricalTier;
 import com.illumidoggies.illumia.client.util.ItemTier.BeholdingTier;
 import com.illumidoggies.illumia.common.items.ModMaterial.ModMaterial;
 import com.illumidoggies.illumia.common.rangedWeapons.TorchBow;
+import com.illumidoggies.illumia.common.specialItems.BananaStaff;
 import com.illumidoggies.illumia.common.specialItems.EnderStaff;
+import com.illumidoggies.illumia.common.specialItems.TesseractStaff;
 import com.illumidoggies.illumia.common.items.BEHOLDING_EYE;
 import com.illumidoggies.illumia.common.items.Geometrical_Dominator;
 import com.illumidoggies.illumia.common.items.Ethereal_Penetrator;
@@ -32,6 +34,11 @@ public class WeaponInit {
 	// teleporting staffs
 	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
 				() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
+	public static final RegistryObject<TesseractStaff> tesseract_staff = ITEMS.register("tesseract_staff", 
+			() -> new TesseractStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
+	public static final RegistryObject<BananaStaff> banana_staff = ITEMS.register("banana_staff", 
+			() -> new BananaStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
+	
 
 	//bow
 	public static final RegistryObject<Item> TORCH_BOW = ITEMS.register("torch_bow", 

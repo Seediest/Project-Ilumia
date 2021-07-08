@@ -34,8 +34,10 @@ public class WeaponInit {
 	// teleporting staffs
 	public static final RegistryObject<EnderStaff> ender_staff = ITEMS.register("ender_staff", 
 				() -> new EnderStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
+	
 	public static final RegistryObject<TesseractStaff> tesseract_staff = ITEMS.register("tesseract_staff", 
 			() -> new TesseractStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
+	
 	public static final RegistryObject<BananaStaff> banana_staff = ITEMS.register("banana_staff", 
 			() -> new BananaStaff(new Item.Properties().group(Illlumia.TUTORIAL_GROUP).maxStackSize(1)));
 	
